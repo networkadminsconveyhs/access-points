@@ -1,6 +1,6 @@
 ---
   -  name: ios version output
-       ansible_host: all
+       host: all
          ansible_connection: network_cli
          ansible_network_os: ios
     
