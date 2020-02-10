@@ -1,0 +1,13 @@
+---
+- name: ios version output
+    
+  hosts: all
+  
+  connection: network_cli
+  
+  - name: run show version on remote devices
+    ios_command:
+      commands: show version
+      
+      
+  
