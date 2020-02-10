@@ -1,10 +1,13 @@
 ---
-  -  name: ios version output
+   -  name: ios version output
        host: all
          connection: network_cli
          network_os: ios
+         ANSIBLE_NET_USERNAME:
+         ANSIBLE_NET_PASSWORD:
     
-     -  name: run show version on remote devices
-          cli_command:
-            command: show version
+  -tasks:
+   - name: run show sysinfo on remote devices
+    aireos_command:
+      commands: show sysinfo
            ...
