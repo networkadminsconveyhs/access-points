@@ -1,8 +1,8 @@
 ---
   -  name: ios version output
-       hosts: all
-        ansible_connection: network_cli
-        ansible_network_os: ios
+      ansible_host=all
+        ansible_connection=network_cli
+        ansible_network_os=ios
     
      -  name: run show version on remote devices
           cli_command:
